@@ -1,0 +1,18 @@
+﻿@model  List<WebsiteForTrueCoders.Product>
+
+<h2>Our Products:</h2>
+
+<table border="2">
+    <tr>
+        <th>Name</th>
+        <th>Price</th>
+    </tr>
+    @foreach (WebsiteForTrueCoders.Product prod in Model)
+    {
+
+        <tr>
+            <td>@prod.Name</td>
+            <td>@prod.Price</td>
+        </tr>
+    }
+</table>
